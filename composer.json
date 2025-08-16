@@ -1,0 +1,29 @@
+{
+    "name": "VENDOR/fileupload",
+    "type": "phpvms-module",
+    "description": "",
+    "authors": [
+        {
+            "name": "Cass Dorman \"Redbeard\"",
+            "email": "ohmyredbeardttv@gmail.com"
+        }
+    ],
+    "require":{
+        "composer/installers": "~1.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers":[
+                "Modules\\FileUpload\\Providers\\FileUploadProvider"
+            ],
+            "aliases": {
+                //null
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\FileUpload\\": "."
+        }
+    }
+}
