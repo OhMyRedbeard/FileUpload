@@ -26,7 +26,7 @@ class RouteServiceProvider extends ServiceProvider
     {
         $config = [
             'as' => 'fileupload',
-            'prefix' => 'fileupload',
+            'prefix' => 'files',
             'namespace' => $this->namespace . '\Frontend',
             'middleware' => ['web'],
         ];
@@ -40,7 +40,7 @@ class RouteServiceProvider extends ServiceProvider
     {
         $config = [
             'as' => 'admin.fileupload',
-            'prefix' => 'admin/files',
+            'prefix' => 'admin/fileupload',
             'namespace' => $this->namespace . '\Admin',
             'middleware' => ['web', 'ability:admin,admin-access'],
         ];
